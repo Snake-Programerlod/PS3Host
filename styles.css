@@ -7,12 +7,10 @@
   font-family: Arial, sans-serif;
   font-size: 20px;
   text-align: center; /* Centrar elementos en el menú */
-  display: flex; /* Mostrar elementos en línea horizontal */
-  justify-content: center; /* Centrar elementos horizontalmente */
 }
 
 .menu li {
-  margin: 0 10px; /* Espacio entre elementos del menú */
+  display: inline-block;
   position: relative; /* Asegurar que los submenús sean relativos a los elementos principales */
 }
 
@@ -54,46 +52,12 @@
   display: block; /* Mostrar submenú al pasar el mouse */
 }
 
-/* Estilo del fondo animado */
+/* Estilo del fondo */
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow: hidden;
-  background: linear-gradient(45deg, #000, #1f1f1f, #000);
-  background-size: 200% 200%;
-  animation: gradientAnimation 10s ease infinite;
-}
-
-@keyframes gradientAnimation {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
-.rayo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(0, 255, 0, 0.5), rgba(0, 0, 0, 0));
-  animation: rayoAnimation 10s linear infinite;
-}
-
-@keyframes rayoAnimation {
-  0% {
-      transform: translateX(-100%);
-  }
-  100% {
-      transform: translateX(100%);
-  }
+  background-color: #6B6B6B; /* Color de fondo gris Oxford */
 }
 
 /* Estilo del tooltip */

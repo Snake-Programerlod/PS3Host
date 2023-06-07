@@ -71,14 +71,14 @@ body {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 10px);
-  left: calc(100% + 10px);
+  top: -10px; /* Ajusta la posición del tooltip */
+  left: calc(100% + 10px); /* Alinea el tooltip a la derecha */
   background-color: #bbc717;
   color: #0c0c0c;
   font-weight: bold;
   padding: 5px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 18px; /* Incrementa el tamaño de fuente en un 25% */
   line-height: 1.4;
   white-space: nowrap;
   z-index: 1;

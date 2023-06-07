@@ -5,7 +5,7 @@
   padding: 0;
   background-color: #000000; /* Color de fondo negro */
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 20px; /* Incrementa el tamaño de fuente en un 25% */
   text-align: center; /* Centrar elementos en el menú */
 }
 
@@ -71,14 +71,15 @@ body {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: -10px; /* Ajusta la posición del tooltip */
-  left: calc(100% + 10px); /* Alinea el tooltip a la derecha */
+  top: 0; /* Ajusta la posición del tooltip */
+  left: 100%; /* Alinea el tooltip a la derecha */
+  transform: translateX(10px); /* Agrega un espacio entre el cursor y el tooltip */
   background-color: #bbc717;
   color: #0c0c0c;
   font-weight: bold;
   padding: 5px;
   border-radius: 4px;
-  font-size: 18px; /* Incrementa el tamaño de fuente en un 25% */
+  font-size: 20px; /* Incrementa el tamaño de fuente en un 25% */
   line-height: 1.4;
   white-space: nowrap;
   z-index: 1;
@@ -100,7 +101,7 @@ body {
 /* Estilo para el contenedor de la imagen */
 .image-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
@@ -112,3 +113,4 @@ body {
   width: 100%;
   height: auto;
 }
+
